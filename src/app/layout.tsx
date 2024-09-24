@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Press_Start_2P } from 'next/font/google'
 import "./globals.css";
 
 const geistSans = localFont({
@@ -12,6 +13,13 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const press_Start_2P = Press_Start_2P({
+  weight: ['400'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${press_Start_2P.className} antialiased`}
       >
         {children}
       </body>
