@@ -60,7 +60,7 @@ export const GameContextProvider = ({ children }: { children: ReactNode }) => {
     },
   };
 
-  const gameDificultOptions = Object.keys(gameParameters)
+  const gameDificultOptions = Object.keys(gameParameters) as tMode[]
 
   const gridNumber = Math.sqrt(cellNumber)
 
@@ -155,7 +155,6 @@ export const GameContextProvider = ({ children }: { children: ReactNode }) => {
         sortNewCell,
         drawnCell,
         cellState,
-        //@ts-expect-error
         gameDificultOptions,
         gridNumber
       }}
