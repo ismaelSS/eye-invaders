@@ -155,7 +155,7 @@ export const GameContextProvider = ({ children }: { children: ReactNode }) => {
         sortNewCell,
         drawnCell,
         cellState,
-        //@ts-ignore
+        //@ts-expect-error
         gameDificultOptions,
         gridNumber
       }}

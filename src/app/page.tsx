@@ -1,4 +1,3 @@
-import ResetGameButton from "@/components/buttons/resetGameButton";
 import DifficultSelect from "@/components/difficultSelect";
 import { GameContextProvider } from "@/components/gameContext";
 import GameFrame from "@/components/gameFrame";
