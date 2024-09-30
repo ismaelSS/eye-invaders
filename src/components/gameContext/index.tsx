@@ -66,6 +66,8 @@ export const GameContextProvider = ({ children }: { children: ReactNode }) => {
 
   const changeMode = (chosenMode: tMode) => {
     setMode(chosenMode);
+    setIsPlay(false)
+    setRemainingTime(0)
   };
 
   const resetGame = () => {
