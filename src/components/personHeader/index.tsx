@@ -18,7 +18,7 @@ export default function PersonHeader() {
           {remainingTime}
         </span>
       </label>
-      <span>ismael</span>
+      <span>ismaelSS</span>
     </header>
   )
 }
